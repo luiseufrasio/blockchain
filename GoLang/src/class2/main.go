@@ -1,4 +1,4 @@
-package class2
+package main
 
 func main() {
 	var num int
