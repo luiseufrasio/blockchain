@@ -1,12 +1,21 @@
 package main
 
-func main() {
-	user := User{"Maria"}
-	//user.name = "Jose"
+import "fmt"
 
-	println(user.name)
+func main() {
+	user := myUser()
+	user.user_map["name"] = "José"
+
+	fmt.Println(user)
 }
 
 type User struct {
-	name string
+	user_map map[string]string
+}
+
+func myUser() *User {
+	result := User{}
+	result.user_map = map[string]string{}
+	
+	return &result
 }
