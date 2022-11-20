@@ -7,6 +7,7 @@ func main() {
 	user.user_map["name"] = "José"
 
 	fmt.Println(user)
+	user.printName();
 }
 
 type User struct {
@@ -18,4 +19,8 @@ func myUser() *User {
 	result.user_map = map[string]string{}
 	
 	return &result
+}
+
+func (user *User) printName() {
+	println(user.user_map["name"])
 }
