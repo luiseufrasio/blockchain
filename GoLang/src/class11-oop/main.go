@@ -1,8 +1,8 @@
 package main
 
 func main() {
-	user := User{}
-	user.name = "Jose"
+	user := User{"Maria"}
+	//user.name = "Jose"
 
 	println(user.name)
 }
